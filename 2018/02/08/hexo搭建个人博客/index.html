@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next mist use-motion" lang="zh-Hans">
+<html class="theme-next mist use-motion" lang="zh-CN">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -77,7 +77,7 @@
     root: '/',
     scheme: 'Mist',
     version: '6.0.3',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    sidebar: {"position":"left","display":"hide","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
     fancybox: false,
     fastclick: false,
     lazyload: false,
@@ -110,7 +110,7 @@
 <meta property="og:url" content="http://yoursite.com/2018/02/08/hexo搭建个人博客/index.html">
 <meta property="og:site_name" content="Cheney&#39;s Blog">
 <meta property="og:description" content="1、前言现在很多网站提供的个人博客充满了各种广告，写起来也不方便，比如代码无法高亮等，让人没有想写的欲望，找了个时间研究了下目前常用的独立博客的做法，比较深受大家喜爱的是通过hexo建立博客。本小白初玩博客，手头vps主机也不想浪费，准备这么玩：  第一步：单台win7上实用Hexo+Github静态网页托管   （今天先搞这种）   第二步：多终端（家里、单位）win7上更新博 第三步：将Hex">
-<meta property="og:locale" content="zh-Hans">
+<meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://p3thby42d.bkt.clouddn.com/1.png">
 <meta property="og:image" content="http://p3thby42d.bkt.clouddn.com/2.png">
 <meta property="og:image" content="http://p3thby42d.bkt.clouddn.com/1518054663429.png">
@@ -119,13 +119,15 @@
 <meta property="og:image" content="http://p3thby42d.bkt.clouddn.com/1518055849658.png">
 <meta property="og:image" content="http://p3thby42d.bkt.clouddn.com/1518055918397.png">
 <meta property="og:image" content="http://p3thby42d.bkt.clouddn.com/ssh.png">
-<meta property="og:updated_time" content="2018-02-08T13:07:22.126Z">
+<meta property="og:updated_time" content="2018-02-08T16:17:52.995Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo搭建个人博客（step by step）">
 <meta name="twitter:description" content="1、前言现在很多网站提供的个人博客充满了各种广告，写起来也不方便，比如代码无法高亮等，让人没有想写的欲望，找了个时间研究了下目前常用的独立博客的做法，比较深受大家喜爱的是通过hexo建立博客。本小白初玩博客，手头vps主机也不想浪费，准备这么玩：  第一步：单台win7上实用Hexo+Github静态网页托管   （今天先搞这种）   第二步：多终端（家里、单位）win7上更新博 第三步：将Hex">
 <meta name="twitter:image" content="http://p3thby42d.bkt.clouddn.com/1.png">
 
 
+
+  <link rel="alternate" href="/atom.xml" title="Cheney's Blog" type="application/atom+xml" />
 
 
 
@@ -179,7 +181,7 @@
 
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
 
   
   
@@ -202,7 +204,7 @@
       </a>
     </div>
       
-        <p class="site-subtitle">记录那些折腾的日子……</p>
+        <h1 class="site-subtitle" itemprop="description">hexo、web、network、linux</h1>
       
   </div>
 
@@ -224,13 +226,25 @@
         
         <li class="menu-item menu-item-home">
           <a href="/" rel="section">
-            <i class="menu-item-icon fa fa-fw fa-home"></i> <br />Home</a>
+            <i class="menu-item-icon fa fa-fw fa-home"></i> <br />首页</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-th"></i> <br />分类</a>
         </li>
       
         
         <li class="menu-item menu-item-archives">
           <a href="/archives/" rel="section">
-            <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />Archives</a>
+            <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-user"></i> <br />关于</a>
         </li>
       
 
@@ -277,9 +291,9 @@
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/02/08/hexo搭建个人博客/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="cheneytac">
+      <meta itemprop="name" content="今晚的月亮好圆">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="http://p3thby42d.bkt.clouddn.com/touxiang.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -291,7 +305,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Hexo搭建个人博客（step by step）</h1>
+          <h2 class="post-title" itemprop="name headline">Hexo搭建个人博客（step by step）</h2>
         
 
         <div class="post-meta">
@@ -301,9 +315,9 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Posted on</span>
+                <span class="post-meta-item-text">发表于</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-02-08T14:19:51+08:00">2018-02-08</time>
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-02-08T14:19:51+08:00">2018-02-08</time>
             
 
             
@@ -312,6 +326,24 @@
             
           </span>
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/hexo/" itemprop="url" rel="index"><span itemprop="name">hexo</span></a></span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -360,12 +392,12 @@
 <li>Git安装</li>
 </ol>
 <p>双击安装文件，默认next结束，右击桌面选择“Git Bash Here”，进入Git，输入<code>git --verison</code>验证是否成功安装</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">chen@chen-PC MINGW32 ~/Desktop</span><br><span class="line">$ git --version</span><br><span class="line">git version 2.16.1.windows.2</span><br></pre></td></tr></table></figure>
+<figure class="highlight d"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">chen<span class="keyword">@chen</span>-PC MINGW32 ~/Desktop</span><br><span class="line">$ git --<span class="keyword">version</span></span><br><span class="line">git <span class="keyword">version</span> <span class="number">2.16</span>.1.windows.2</span><br></pre></td></tr></table></figure>
 <ol>
 <li>Node.js安装</li>
 </ol>
 <p>node.js可以通过nvm安装，对于windows用户来说，建议使用安装程序进行安装。双击node-v9.5.0-x86.msi保持默认一路next安装结束。打开<code>cmd</code>输入<code>node -v</code>验证是否成功安装。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Microsoft Windows [版本 6.1.7601]</span><br><span class="line">版权所有 (c) 2009 Microsoft Corporation。保留所有权利。</span><br><span class="line"></span><br><span class="line">C:\Users\chen&gt;node -v</span><br><span class="line">v9.5.0</span><br></pre></td></tr></table></figure>
+<figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Microsoft Windows [版本 <span class="number">6.1</span>.<span class="number">7601</span>]</span><br><span class="line">版权所有 (c) <span class="number">2009</span> Microsoft Corporation。保留所有权利。</span><br><span class="line"></span><br><span class="line">C:\Users\chen&gt;<span class="keyword">node</span> <span class="title">-v</span></span><br><span class="line">v9.<span class="number">5.0</span></span><br></pre></td></tr></table></figure>
 <h3 id="2-2-安装Hexo"><a href="#2-2-安装Hexo" class="headerlink" title="2.2 安装Hexo"></a>2.2 安装Hexo</h3><h4 id="2-2-1-Git账户设置"><a href="#2-2-1-Git账户设置" class="headerlink" title="2.2.1 Git账户设置"></a>2.2.1 Git账户设置</h4><p><code>git config --global user.name &quot;xxx&quot;及email &quot;xx@xx.com&quot;</code>用于设置每次提交的作者信息，包括姓名和邮箱，–global表示对所有项目都使用这个信息。<code>git config --list</code>可查看设置。</p>
 <figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">chen@chen-PC MINGW32 /e/blog</span><br><span class="line">$ git config --global user.name <span class="string">"cheneytac"</span></span><br><span class="line"></span><br><span class="line">chen@chen-PC MINGW32 /e/blog</span><br><span class="line">$ git config --global user.email <span class="string">"cheneytac@gmail.com"</span></span><br></pre></td></tr></table></figure>
 <h4 id="2-2-2-安装hexo"><a href="#2-2-2-安装hexo" class="headerlink" title="2.2.2 安装hexo"></a>2.2.2 安装hexo</h4><ol>
@@ -373,30 +405,30 @@
 <p>默认是通过npm来安装hexo-cli，在使用npm时，官方的源下载npm包会比较慢，国内一般使用淘宝npm镜像源，切换npm源过程如下：</p>
 </li>
 </ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line">chen@chen-PC MINGW32 /e/blog</span><br><span class="line">$ npm install -g nrm                  //安装nrm （NPM源管理工具）</span><br><span class="line">npm WARN deprecated coffee-script@1.7.1: CoffeeScript on NPM has moved to &quot;coffeescript&quot; (no hyphen)</span><br><span class="line">C:\Users\chen\AppData\Roaming\npm\nrm -&gt; C:\Users\chen\AppData\Roaming\npm\node_modules\nrm\cli.js</span><br><span class="line">+ nrm@1.0.2</span><br><span class="line">updated 11 packages in 47.777s</span><br><span class="line"></span><br><span class="line">chen@chen-PC MINGW32 /e/blog</span><br><span class="line">$ nrm ls</span><br><span class="line"></span><br><span class="line">* npm ---- https://registry.npmjs.org/          //当前默认源</span><br><span class="line">  cnpm --- http://r.cnpmjs.org/</span><br><span class="line">  taobao - https://registry.npm.taobao.org/</span><br><span class="line">  nj ----- https://registry.nodejitsu.com/</span><br><span class="line">  rednpm - http://registry.mirror.cqupt.edu.cn/</span><br><span class="line">  npmMirror  https://skimdb.npmjs.com/registry/</span><br><span class="line">  edunpm - http://registry.enpmjs.org/</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">chen@chen-PC MINGW32 /e/blog</span><br><span class="line">$ nrm test</span><br><span class="line"></span><br><span class="line">* npm ---- 965ms                                //测速 </span><br><span class="line">  cnpm --- 270ms</span><br><span class="line">  taobao - 192ms</span><br><span class="line">  nj ----- Fetch Error</span><br><span class="line">  rednpm - Fetch Error</span><br><span class="line">  npmMirror  4115ms</span><br><span class="line">  edunpm - Fetch Error</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">chen@chen-PC MINGW32 /e/blog</span><br><span class="line">$ nrm user taobao                               //切换淘宝源</span><br><span class="line">     Registry has been set to: http://registry.npm.taobao.org/</span><br></pre></td></tr></table></figure>
+<figure class="highlight groovy"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line">chen<span class="meta">@chen</span>-PC MINGW32 <span class="regexp">/e/</span>blog</span><br><span class="line">$ npm install -g nrm                  <span class="comment">//安装nrm （NPM源管理工具）</span></span><br><span class="line">npm WARN deprecated coffee-script@<span class="number">1.7</span><span class="number">.1</span>: CoffeeScript on NPM has moved to <span class="string">"coffeescript"</span> (no hyphen)</span><br><span class="line"><span class="string">C:</span>\Users\chen\AppData\Roaming\npm\nrm -&gt; <span class="string">C:</span>\Users\chen\AppData\Roaming\npm\node_modules\nrm\cli.js</span><br><span class="line">+ nrm@<span class="number">1.0</span><span class="number">.2</span></span><br><span class="line">updated <span class="number">11</span> packages <span class="keyword">in</span> <span class="number">47.777</span>s</span><br><span class="line"></span><br><span class="line">chen<span class="meta">@chen</span>-PC MINGW32 <span class="regexp">/e/</span>blog</span><br><span class="line">$ nrm ls</span><br><span class="line"></span><br><span class="line">* npm ---- <span class="string">https:</span><span class="comment">//registry.npmjs.org/          //当前默认源</span></span><br><span class="line">  cnpm --- <span class="string">http:</span><span class="comment">//r.cnpmjs.org/</span></span><br><span class="line">  taobao - <span class="string">https:</span><span class="comment">//registry.npm.taobao.org/</span></span><br><span class="line">  nj ----- <span class="string">https:</span><span class="comment">//registry.nodejitsu.com/</span></span><br><span class="line">  rednpm - <span class="string">http:</span><span class="comment">//registry.mirror.cqupt.edu.cn/</span></span><br><span class="line">  npmMirror  <span class="string">https:</span><span class="comment">//skimdb.npmjs.com/registry/</span></span><br><span class="line">  edunpm - <span class="string">http:</span><span class="comment">//registry.enpmjs.org/</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">chen<span class="meta">@chen</span>-PC MINGW32 <span class="regexp">/e/</span>blog</span><br><span class="line">$ nrm test</span><br><span class="line"></span><br><span class="line">* npm ---- <span class="number">965</span>ms                                <span class="comment">//测速 </span></span><br><span class="line">  cnpm --- <span class="number">270</span>ms</span><br><span class="line">  taobao - <span class="number">192</span>ms</span><br><span class="line">  nj ----- Fetch Error</span><br><span class="line">  rednpm - Fetch Error</span><br><span class="line">  npmMirror  <span class="number">4115</span>ms</span><br><span class="line">  edunpm - Fetch Error</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">chen<span class="meta">@chen</span>-PC MINGW32 <span class="regexp">/e/</span>blog</span><br><span class="line">$ nrm user taobao                               <span class="comment">//切换淘宝源</span></span><br><span class="line">     Registry has been set <span class="string">to:</span> <span class="string">http:</span><span class="comment">//registry.npm.taobao.org/</span></span><br></pre></td></tr></table></figure>
 <ol>
 <li>安装hexo<br>通过 <code>npm install -g hexo-cli</code>进行安装</li>
 </ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">chen@chen-PC MINGW32 /e/blog</span><br><span class="line">$ npm install -g hexo-cli</span><br><span class="line">C:\Users\chen\AppData\Roaming\npm\hexo -&gt; C:\Users\chen\AppData\Roaming\npm\node_modules\hexo-cli\bin\hexo</span><br><span class="line">npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.1.3 (node_modules\hexo-cli\node_modules\fsevents):   //fsevets是mac osx系统的相关依赖，在win下使用了，会有警告，忽略即可</span><br><span class="line">npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.1.3: wanted &#123;&quot;os&quot;:&quot;darwin&quot;,&quot;arch&quot;:&quot;any&quot;&#125; (current: &#123;&quot;os&quot;:&quot;win32&quot;,&quot;arch&quot;:&quot;ia32&quot;&#125;)</span><br><span class="line"></span><br><span class="line">+ hexo-cli@1.0.4</span><br><span class="line">updated 1 package in 28.257s</span><br></pre></td></tr></table></figure>
+<figure class="highlight moonscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">chen@chen-PC MINGW32 /e/blog</span><br><span class="line">$ npm install -g hexo-cli</span><br><span class="line"><span class="name">C</span>:\Users\chen\AppData\Roaming\npm\hexo -&gt; <span class="name">C</span>:\Users\chen\AppData\Roaming\npm\node_modules\hexo-cli\bin\hexo</span><br><span class="line">npm WARN optional SKIPPING OPTIONAL <span class="name">DEPENDENCY</span>: fsevents@<span class="number">1.1</span><span class="number">.3</span> (node_modules\hexo-cli\node_modules\fsevents):   //fsevets是mac osx系统的相关依赖，在win下使用了，会有警告，忽略即可</span><br><span class="line">npm WARN notsup SKIPPING OPTIONAL <span class="name">DEPENDENCY</span>: Unsupported platform <span class="keyword">for</span> fsevents@<span class="number">1.1</span><span class="number">.3</span>: wanted &#123;<span class="string">"os"</span>:<span class="string">"darwin"</span>,<span class="string">"arch"</span>:<span class="string">"any"</span>&#125; (<span class="name">current</span>: &#123;<span class="string">"os"</span>:<span class="string">"win32"</span>,<span class="string">"arch"</span>:<span class="string">"ia32"</span>&#125;)</span><br><span class="line"></span><br><span class="line">+ hexo-cli@<span class="number">1.0</span><span class="number">.4</span></span><br><span class="line">updated <span class="number">1</span> <span class="built_in">package</span> <span class="keyword">in</span> <span class="number">28.257</span>s</span><br></pre></td></tr></table></figure>
 <ol>
 <li>hexo初始化<br>hexo初始化是释放hexo相关文件，本人博客路径是e:/blog，因此需切换至该目录，输入<code>hexo init</code></li>
 </ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">chen@chen-PC MINGW32 /e/blog</span><br><span class="line">$ pwd</span><br><span class="line">/e/blog</span><br><span class="line"></span><br><span class="line">chen@chen-PC MINGW32 /e/blog</span><br><span class="line">$ hexo init</span><br><span class="line">INFO  Cloning hexo-starter to E:\blog</span><br><span class="line">Cloning into &apos;E:\blog&apos;...</span><br><span class="line">remote: Counting objects: 62, done.</span><br><span class="line">remote: Total 62 (delta 0), reused 0 (delta 0), pack-reused 62</span><br><span class="line">Unpacking objects: 100% (62/62), done.</span><br><span class="line">Submodule &apos;themes/landscape&apos; (https://github.com/hexojs/hexo-theme-landscape.git) registered for path &apos;themes/landscape&apos;</span><br><span class="line">Cloning into &apos;E:/blog/themes/landscape&apos;...</span><br><span class="line">remote: Counting objects: 794, done.</span><br><span class="line">remote: Total 794 (delta 0), reused 0 (delta 0), pack-reused 794</span><br><span class="line">Receiving objects: 100% (794/794), 2.53 MiB | 854.00 KiB/s, done.</span><br><span class="line">Resolving deltas: 100% (415/415), done.</span><br><span class="line">Submodule path &apos;themes/landscape&apos;: checked out &apos;73a23c51f8487cfcd7c6deec96ccc7543960d350&apos;</span><br><span class="line">INFO  Install dependencies</span><br><span class="line">▒▒Ϣ: ▒▒▒ṩ▒▒ģʽ▒޷▒▒ҵ▒▒ļ▒▒▒</span><br><span class="line">npm notice created a lockfile as package-lock.json. You should commit this file.</span><br><span class="line">npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.1.3 (node_modules\fsevents):</span><br><span class="line">npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.1.3: wanted &#123;&quot;os&quot;:&quot;darwin&quot;,&quot;arch&quot;:&quot;any&quot;&#125; (current: &#123;&quot;os&quot;:&quot;win32&quot;,&quot;arch&quot;:&quot;ia32&quot;&#125;)</span><br><span class="line"></span><br><span class="line">added 336 packages in 51.206s</span><br><span class="line">INFO  Start blogging with Hexo!</span><br></pre></td></tr></table></figure>
+<figure class="highlight groovy"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">chen<span class="meta">@chen</span>-PC MINGW32 <span class="regexp">/e/</span>blog</span><br><span class="line">$ pwd</span><br><span class="line"><span class="regexp">/e/</span>blog</span><br><span class="line"></span><br><span class="line">chen<span class="meta">@chen</span>-PC MINGW32 <span class="regexp">/e/</span>blog</span><br><span class="line">$ hexo init</span><br><span class="line">INFO  Cloning hexo-starter to <span class="string">E:</span>\blog</span><br><span class="line">Cloning into <span class="string">'E:\blog'</span>...</span><br><span class="line"><span class="string">remote:</span> Counting <span class="string">objects:</span> <span class="number">62</span>, done.</span><br><span class="line"><span class="string">remote:</span> Total <span class="number">62</span> (delta <span class="number">0</span>), reused <span class="number">0</span> (delta <span class="number">0</span>), pack-reused <span class="number">62</span></span><br><span class="line">Unpacking <span class="string">objects:</span> <span class="number">100</span>% (<span class="number">62</span>/<span class="number">62</span>), done.</span><br><span class="line">Submodule <span class="string">'themes/landscape'</span> (<span class="string">https:</span><span class="comment">//github.com/hexojs/hexo-theme-landscape.git) registered for path 'themes/landscape'</span></span><br><span class="line">Cloning into <span class="string">'E:/blog/themes/landscape'</span>...</span><br><span class="line"><span class="string">remote:</span> Counting <span class="string">objects:</span> <span class="number">794</span>, done.</span><br><span class="line"><span class="string">remote:</span> Total <span class="number">794</span> (delta <span class="number">0</span>), reused <span class="number">0</span> (delta <span class="number">0</span>), pack-reused <span class="number">794</span></span><br><span class="line">Receiving <span class="string">objects:</span> <span class="number">100</span>% (<span class="number">794</span><span class="regexp">/794), 2.53 MiB | 854.00 KiB/</span>s, done.</span><br><span class="line">Resolving <span class="string">deltas:</span> <span class="number">100</span>% (<span class="number">415</span>/<span class="number">415</span>), done.</span><br><span class="line">Submodule path <span class="string">'themes/landscape'</span>: checked out <span class="string">'73a23c51f8487cfcd7c6deec96ccc7543960d350'</span></span><br><span class="line">INFO  Install dependencies</span><br><span class="line">▒▒Ϣ: ▒▒▒ṩ▒▒ģʽ▒޷▒▒ҵ▒▒ļ▒▒▒</span><br><span class="line">npm notice created a lockfile <span class="keyword">as</span> <span class="keyword">package</span>-lock.json. You should commit <span class="keyword">this</span> file.</span><br><span class="line">npm WARN optional SKIPPING OPTIONAL <span class="string">DEPENDENCY:</span> fsevents@<span class="number">1.1</span><span class="number">.3</span> (node_modules\fsevents):</span><br><span class="line">npm WARN notsup SKIPPING OPTIONAL <span class="string">DEPENDENCY:</span> Unsupported platform <span class="keyword">for</span> fsevents@<span class="number">1.1</span><span class="number">.3</span>: wanted &#123;<span class="string">"os"</span>:<span class="string">"darwin"</span>,<span class="string">"arch"</span>:<span class="string">"any"</span>&#125; (<span class="string">current:</span> &#123;<span class="string">"os"</span>:<span class="string">"win32"</span>,<span class="string">"arch"</span>:<span class="string">"ia32"</span>&#125;)</span><br><span class="line"></span><br><span class="line">added <span class="number">336</span> packages <span class="keyword">in</span> <span class="number">51.206</span>s</span><br><span class="line">INFO  Start blogging with Hexo!</span><br></pre></td></tr></table></figure>
 <ol>
 <li>最后输入<code>npm install</code></li>
 </ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ npm install</span><br><span class="line">npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.1.3 (node_modules\fsevents):</span><br><span class="line">npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.1.3: wanted &#123;&quot;os&quot;:&quot;darwin&quot;,&quot;arch&quot;:&quot;any&quot;&#125; (current: &#123;&quot;os&quot;:&quot;win32&quot;,&quot;arch&quot;:&quot;ia32&quot;&#125;)</span><br><span class="line"></span><br><span class="line">up to date in 13.475s</span><br></pre></td></tr></table></figure>
-<h3 id="2-3-本地web访问"><a href="#2-3-本地web访问" class="headerlink" title="2.3 本地web访问"></a>2.3 本地web访问</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo s</span><br><span class="line">INFO  Start processing</span><br><span class="line">INFO  Hexo is running at http://localhost:4000/. Press Ctrl+C to stop.</span><br></pre></td></tr></table></figure>
+<figure class="highlight livescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">npm</span> install</span><br><span class="line"><span class="built_in">npm</span> WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@<span class="number">1.1</span>.<span class="number">3</span> (node_modules<span class="string">\fsevents):</span></span><br><span class="line"><span class="built_in">npm</span> WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform <span class="keyword">for</span> fsevents@<span class="number">1.1</span>.<span class="number">3</span>: wanted &#123;<span class="string">"os"</span>:<span class="string">"darwin"</span>,<span class="string">"arch"</span>:<span class="string">"any"</span>&#125; (current: &#123;<span class="string">"os"</span>:<span class="string">"win32"</span>,<span class="string">"arch"</span>:<span class="string">"ia32"</span>&#125;)</span><br><span class="line"></span><br><span class="line">up <span class="keyword">to</span> date <span class="keyword">in</span> <span class="number">13.475s</span></span><br></pre></td></tr></table></figure>
+<h3 id="2-3-本地web访问"><a href="#2-3-本地web访问" class="headerlink" title="2.3 本地web访问"></a>2.3 本地web访问</h3><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo s</span><br><span class="line">INFO  <span class="keyword">Start</span> processing</span><br><span class="line">INFO  Hexo <span class="keyword">is</span> running <span class="keyword">at</span> <span class="keyword">http</span>://localhost:<span class="number">4000</span>/. Press Ctrl+C <span class="keyword">to</span> stop.</span><br></pre></td></tr></table></figure>
 <p><img src="http://p3thby42d.bkt.clouddn.com/1.png" alt="1"></p>
 <h3 id="2-4-更换主题"><a href="#2-4-更换主题" class="headerlink" title="2.4 更换主题"></a>2.4 更换主题</h3><ul>
 <li>官网主题地址：<a href="https://hexo.io/themes/index.html" target="_blank" rel="noopener">https://hexo.io/themes/index.html</a>                   //目前189个item</li>
 <li>知乎主题话题：<a href="https://www.zhihu.com/question/24422335" target="_blank" rel="noopener">https://www.zhihu.com/question/24422335</a></li>
 </ul>
 <h3 id="2-4-1-克隆下载主题"><a href="#2-4-1-克隆下载主题" class="headerlink" title="2.4.1 克隆下载主题"></a>2.4.1 克隆下载主题</h3><p>NexT主题目前10994个star，3239个fork，比较流行，目前最新版本是v6.0.3。项目地址：<a href="https://github.com/theme-next/hexo-theme-next" target="_blank" rel="noopener">https://github.com/theme-next/hexo-theme-next</a><br>将NexT主题克隆到本地，打开E:\blog\themes，确人已成功下载了NexT。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">chen@chen-PC MINGW32 /e/blog</span><br><span class="line">$ git clone https://github.com/theme-next/hexo-theme-next themes/next</span><br><span class="line">Cloning into &apos;themes/next&apos;...</span><br><span class="line">remote: Counting objects: 1835, done.</span><br><span class="line">remote: Compressing objects: 100% (21/21), done.</span><br><span class="line">remote: Total 1835 (delta 5), reused 11 (delta 0), pack-reused 1813</span><br><span class="line">Receiving objects: 100% (1835/1835), 909.43 KiB | 701.00 KiB/s, done.</span><br><span class="line">Resolving deltas: 100% (1055/1055), done.</span><br></pre></td></tr></table></figure>
+<figure class="highlight groovy"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">chen<span class="meta">@chen</span>-PC MINGW32 <span class="regexp">/e/</span>blog</span><br><span class="line">$ git clone <span class="string">https:</span><span class="comment">//github.com/theme-next/hexo-theme-next themes/next</span></span><br><span class="line">Cloning into <span class="string">'themes/next'</span>...</span><br><span class="line"><span class="string">remote:</span> Counting <span class="string">objects:</span> <span class="number">1835</span>, done.</span><br><span class="line"><span class="string">remote:</span> Compressing <span class="string">objects:</span> <span class="number">100</span>% (<span class="number">21</span>/<span class="number">21</span>), done.</span><br><span class="line"><span class="string">remote:</span> Total <span class="number">1835</span> (delta <span class="number">5</span>), reused <span class="number">11</span> (delta <span class="number">0</span>), pack-reused <span class="number">1813</span></span><br><span class="line">Receiving <span class="string">objects:</span> <span class="number">100</span>% (<span class="number">1835</span><span class="regexp">/1835), 909.43 KiB | 701.00 KiB/</span>s, done.</span><br><span class="line">Resolving <span class="string">deltas:</span> <span class="number">100</span>% (<span class="number">1055</span>/<span class="number">1055</span>), done.</span><br></pre></td></tr></table></figure>
 <h3 id="2-4-2-修改配置文件"><a href="#2-4-2-修改配置文件" class="headerlink" title="2.4.2 修改配置文件"></a>2.4.2 修改配置文件</h3><p>修改根目录_config.yml， 找到 theme 字段，并将其值更改为 next。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">theme: next                 //注意空格</span><br></pre></td></tr></table></figure>
-<h3 id="2-4-3-本地预览新主题"><a href="#2-4-3-本地预览新主题" class="headerlink" title="2.4.3 本地预览新主题"></a>2.4.3 本地预览新主题</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">chen@chen-PC MINGW32 /e/blog</span><br><span class="line">$ hexo s</span><br><span class="line">INFO  Start processing</span><br><span class="line">INFO  Hexo is running at http://localhost:4000/. Press Ctrl+C to stop.</span><br></pre></td></tr></table></figure>
+<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">theme: <span class="keyword">next</span>                 <span class="regexp">//</span>注意空格</span><br></pre></td></tr></table></figure>
+<h3 id="2-4-3-本地预览新主题"><a href="#2-4-3-本地预览新主题" class="headerlink" title="2.4.3 本地预览新主题"></a>2.4.3 本地预览新主题</h3><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">chen@chen-PC MINGW32 /e/blog</span><br><span class="line">$ hexo s</span><br><span class="line">INFO  <span class="keyword">Start</span> processing</span><br><span class="line">INFO  Hexo <span class="keyword">is</span> running <span class="keyword">at</span> <span class="keyword">http</span>://localhost:<span class="number">4000</span>/. Press Ctrl+C <span class="keyword">to</span> stop.</span><br></pre></td></tr></table></figure>
 <p><img src="http://p3thby42d.bkt.clouddn.com/2.png" alt="2"></p>
 <h3 id="2-5-发布到github"><a href="#2-5-发布到github" class="headerlink" title="2.5 发布到github"></a>2.5 发布到github</h3><p>大体流程是本地hexo将写好的博文（MD文件），通过<code>hexo g</code>来生成public，然后通过<code>hexo d</code>将public文件内容推送到github，其他人即可用github二级域名来访问生成的静态网页。</p>
 <h3 id="2-5-1-github建立仓库"><a href="#2-5-1-github建立仓库" class="headerlink" title="2.5.1 github建立仓库"></a>2.5.1 github建立仓库</h3><ol>
@@ -411,41 +443,41 @@
 <ol>
 <li>用<code>ssh-keygen -t rsa -C &quot;cheneytac@qq.com&quot;</code>生成本地公私钥</li>
 </ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">zjhx@zjhx-PC MINGW32 ~/Desktop</span><br><span class="line">$ ssh-keygen -t rsa -C &quot;cheneytac@qq.com&quot;</span><br><span class="line">Generating public/private rsa key pair.</span><br><span class="line">Enter file in which to save the key (/c/Users/zjhx/.ssh/id_rsa):</span><br><span class="line">Created directory &apos;/c/Users/zjhx/.ssh&apos;.                        //保存目录</span><br><span class="line">Enter passphrase (empty for no passphrase):                    //输入密码，后面要用到</span><br><span class="line">Enter same passphrase again:</span><br><span class="line">Your identification has been saved in /c/Users/zjhx/.ssh/id_rsa.</span><br><span class="line">Your public key has been saved in /c/Users/zjhx/.ssh/id_rsa.pub.</span><br><span class="line">The key fingerprint is:</span><br><span class="line">SHA256:r81oJReKRT4ctNfzYOu22gIwnC7jB3IOVlFFN5eeX+U cheneytac@qq.com</span><br><span class="line">The key&apos;s randomart image is:</span><br><span class="line">+---[RSA 2048]----+</span><br><span class="line">|     ..++ o ..   |</span><br><span class="line">|    .   oo +.   .|</span><br><span class="line">|     o =....=. ..|</span><br><span class="line">|    . = =...o=  E|</span><br><span class="line">|   . . =So ..... |</span><br><span class="line">|  + = o +.o.  .  |</span><br><span class="line">| . * +   =. o    |</span><br><span class="line">|    o . .=.o .   |</span><br><span class="line">|     . .o +oo    |</span><br><span class="line">+----[SHA256]-----+</span><br></pre></td></tr></table></figure>
+<figure class="highlight gherkin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">zjhx<span class="meta">@zjhx-PC</span> MINGW32 ~/Desktop</span><br><span class="line">$ ssh-keygen -t rsa -C <span class="string">"cheneytac@qq.com"</span></span><br><span class="line">Generating public/private rsa key pair.</span><br><span class="line">Enter file in which to save the key (/c/Users/zjhx/.ssh/id_rsa):</span><br><span class="line">Created directory '/c/Users/zjhx/.ssh'.                        //保存目录</span><br><span class="line">Enter passphrase (empty for no passphrase):                    //输入密码，后面要用到</span><br><span class="line">Enter same passphrase again:</span><br><span class="line">Your identification has been saved in /c/Users/zjhx/.ssh/id_rsa.</span><br><span class="line">Your public key has been saved in /c/Users/zjhx/.ssh/id_rsa.pub.</span><br><span class="line">The key fingerprint is:</span><br><span class="line">SHA256:r81oJReKRT4ctNfzYOu22gIwnC7jB3IOVlFFN5eeX+U cheneytac<span class="meta">@qq.com</span></span><br><span class="line">The key's randomart image is:</span><br><span class="line">+---[RSA 2048]----+</span><br><span class="line">|<span class="string">     ..++ o ..   </span>|</span><br><span class="line">|<span class="string">    .   oo +.   .</span>|</span><br><span class="line">|<span class="string">     o =....=. ..</span>|</span><br><span class="line">|<span class="string">    . = =...o=  E</span>|</span><br><span class="line">|<span class="string">   . . =So ..... </span>|</span><br><span class="line">|<span class="string">  + = o +.o.  .  </span>|</span><br><span class="line">|<span class="string"> . * +   =. o    </span>|</span><br><span class="line">|<span class="string">    o . .=.o .   </span>|</span><br><span class="line">|<span class="string">     . .o +oo    </span>|</span><br><span class="line">+----[SHA256]-----+</span><br></pre></td></tr></table></figure>
 <ol>
 <li>复制.ssh下的id_rsa.pub公钥复制到github</li>
 </ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">zjhx@zjhx-PC MINGW32 ~/Desktop</span><br><span class="line">$ cd /c/Users/zjhx/.ssh</span><br><span class="line"></span><br><span class="line">zjhx@zjhx-PC MINGW32 ~/.ssh</span><br><span class="line">$ ls -al</span><br><span class="line">total 21</span><br><span class="line">drwxr-xr-x 1 zjhx 197121    0 二月  8 09:40 ./</span><br><span class="line">drwxr-xr-x 1 zjhx 197121    0 二月  8 09:40 ../</span><br><span class="line">-rw-r--r-- 1 zjhx 197121 1766 二月  8 09:40 id_rsa</span><br><span class="line">-rw-r--r-- 1 zjhx 197121  398 二月  8 09:40 id_rsa.pub              </span><br><span class="line"></span><br><span class="line">zjhx@zjhx-PC MINGW32 ~/.ssh</span><br><span class="line">$ cat id_rsa.pub</span><br><span class="line">ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDC+CpJcTJTn3ni7VNwIWEMfICPTX+YzTjyT3gYOwxNXsDj3cSDfSkmFFg5To5tsWpmdU/fupCjfYz35GhMExmGvjObmuxykf2qyjugornkinVTe6i40jPJ86Tlc4eEGCQbRYa4O/EoR6ToLTQBu5B+thWUiYSZC9XgqTf4vQlkRu8TBGtqvQiVu8cPKp0ZMDgi6uINmgwD5CXFrTbHT2V4LaA2Odu5X/zNV/MMEDkBivnLqpYyCx2T35fFymgqsTqbjIcK0eIVbVSACxEfwMF42U2IErAcZO6lpigALStqUg+vwzcaAkkGyM+db8kT7e5FxcR3gfJqYVGkq6OvFOH1 cheneytac@qq.com                     //公钥</span><br></pre></td></tr></table></figure>
+<figure class="highlight tap"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">zjhx@zjhx-PC MINGW32 ~/Desktop</span><br><span class="line">$ cd /c/Users/zjhx/.ssh</span><br><span class="line"></span><br><span class="line">zjhx@zjhx-PC MINGW32 ~/.ssh</span><br><span class="line">$ ls -al</span><br><span class="line">total 21</span><br><span class="line">drwxr-xr-x<span class="number"> 1 </span>zjhx<span class="number"> 197121 </span>  <span class="number"> 0 </span>二月 <span class="number"> 8 </span>09:40 ./</span><br><span class="line">drwxr-xr-x<span class="number"> 1 </span>zjhx<span class="number"> 197121 </span>  <span class="number"> 0 </span>二月 <span class="number"> 8 </span>09:40 ../</span><br><span class="line">-rw-r--r--<span class="number"> 1 </span>zjhx<span class="number"> 197121 </span>1766 二月 <span class="number"> 8 </span>09:40 id_rsa</span><br><span class="line">-rw-r--r--<span class="number"> 1 </span>zjhx<span class="number"> 197121 </span><span class="number"> 398 </span>二月 <span class="number"> 8 </span>09:40 id_rsa.pub              </span><br><span class="line"></span><br><span class="line">zjhx@zjhx-PC MINGW32 ~/.ssh</span><br><span class="line">$ cat id_rsa.pub</span><br><span class="line">ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDC+CpJcTJTn3ni7VNwIWEMfICPTX+YzTjyT3gYOwxNXsDj3cSDfSkmFFg5To5tsWpmdU/fupCjfYz35GhMExmGvjObmuxykf2qyjugornkinVTe6i40jPJ86Tlc4eEGCQbRYa4O/EoR6ToLTQBu5B+thWUiYSZC9XgqTf4vQlkRu8TBGtqvQiVu8cPKp0ZMDgi6uINmgwD5CXFrTbHT2V4LaA2Odu5X/zNV/MMEDkBivnLqpYyCx2T35fFymgqsTqbjIcK0eIVbVSACxEfwMF42U2IErAcZO6lpigALStqUg+vwzcaAkkGyM+db8kT7e5FxcR3gfJqYVGkq6OvFOH1 cheneytac@qq.com                     //公钥</span><br></pre></td></tr></table></figure>
 <p><img src="http://p3thby42d.bkt.clouddn.com/1518055806000.png" alt="1518055806000"></p>
 <p><img src="http://p3thby42d.bkt.clouddn.com/1518055849658.png" alt="1518055849658"></p>
 <p><img src="http://p3thby42d.bkt.clouddn.com/1518055918397.png" alt="1518055918397"></p>
 <p>输入之前创建的密码后，即可添加成功。<br>测试ssh访问github<code>ssh -Tgit@github.com</code></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">zjhx@zjhx-PC MINGW32 /e/blog</span><br><span class="line">$ ssh -T git@github.com</span><br><span class="line">The authenticity of host &apos;github.com (192.30.255.113)&apos; can&apos;t be established.</span><br><span class="line">RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8.</span><br><span class="line">Are you sure you want to continue connecting (yes/no)? yes</span><br><span class="line">Warning: Permanently added &apos;github.com,192.30.255.113&apos; (RSA) to the list of known hosts.</span><br><span class="line">Enter passphrase for key &apos;/c/Users/zjhx/.ssh/id_rsa&apos;:</span><br><span class="line">Hi cheneytac! You&apos;ve successfully authenticated, but GitHub does not provide shell access.</span><br></pre></td></tr></table></figure>
+<figure class="highlight vbnet"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">zjhx@zjhx-PC MINGW32 /e/blog</span><br><span class="line">$ ssh -T git@github.com</span><br><span class="line">The authenticity <span class="keyword">of</span> host <span class="comment">'github.com (192.30.255.113)' can't be established.</span></span><br><span class="line">RSA <span class="keyword">key</span> fingerprint <span class="keyword">is</span> SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8.</span><br><span class="line">Are you sure you want <span class="keyword">to</span> <span class="keyword">continue</span> connecting (yes/no)? yes</span><br><span class="line">Warning: Permanently added <span class="comment">'github.com,192.30.255.113' (RSA) to the list of known hosts.</span></span><br><span class="line">Enter passphrase <span class="keyword">for</span> <span class="keyword">key</span> <span class="comment">'/c/Users/zjhx/.ssh/id_rsa':</span></span><br><span class="line">Hi cheneytac! You<span class="comment">'ve successfully authenticated, but GitHub does not provide shell access.</span></span><br></pre></td></tr></table></figure>
 <h3 id="2-5-3-建立ssh访问通道"><a href="#2-5-3-建立ssh访问通道" class="headerlink" title="2.5.3 建立ssh访问通道"></a>2.5.3 建立ssh访问通道</h3><p>修改E:\blog\_config.yml文件，最底下修改如下：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy: </span><br><span class="line">  type: git                                              </span><br><span class="line">  repository: git@github.com:cheneytac/cheneytac.git         //ssh或http方式，此处用ssh方式</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
+<figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">deploy</span>: </span><br><span class="line">  <span class="attribute">type</span>: git                                              </span><br><span class="line">  <span class="attribute">repository</span>: git<span class="variable">@github</span>.<span class="attribute">com</span>:cheneytac/cheneytac.git         <span class="comment">//ssh或http方式，此处用ssh方式</span></span><br><span class="line">  <span class="attribute">branch</span>: master</span><br></pre></td></tr></table></figure>
 <h3 id="2-5-4-发布博文"><a href="#2-5-4-发布博文" class="headerlink" title="2.5.4 发布博文"></a>2.5.4 发布博文</h3><ol>
 <li>新建博文</li>
 </ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new &quot;hexo搭建个人博客&quot;</span><br></pre></td></tr></table></figure>
+<figure class="highlight actionscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo <span class="keyword">new</span> <span class="string">"hexo搭建个人博客"</span></span><br></pre></td></tr></table></figure>
 <p>到E:\blog\source_posts下找到”hexo搭建个人博客.md“，然后使用你喜欢的md软件进行书写。</p>
 <ol>
 <li>发布到github</li>
 </ol>
 <p>用<code>hexo g</code>生成public资源，然后<code>hexo d</code>同步到github空间上，此时用<a href="https://cheneytac.github.io进行访问。" target="_blank" rel="noopener">https://cheneytac.github.io进行访问。</a><br>此时，恭喜你可以成功建立hexo博客了。<br>第一次发布需要下载插件，以后就不需要了下载插件。<code>npm install hexo-deployer-git --save</code></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">zjhx@zjhx-PC MINGW32 /e/blog</span><br><span class="line">$ npm install hexo-deployer-git --save</span><br><span class="line">npm WARN deprecated swig@1.4.2: This package is no longer maintained</span><br><span class="line">npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.1.3 (node_modules\fsevents):</span><br><span class="line">npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.1.3: wanted &#123;&quot;os&quot;:&quot;darwin&quot;,&quot;arch&quot;:&quot;any&quot;&#125; (current: &#123;&quot;os&quot;:&quot;win32&quot;,&quot;arch&quot;:&quot;ia32&quot;&#125;)</span><br><span class="line"></span><br><span class="line">+ hexo-deployer-git@0.3.1</span><br><span class="line">added 31 packages in 23.146s</span><br></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">zjhx@zjhx-PC MINGW32 /e/blog</span><br><span class="line">$ hexo g                                       //生成public</span><br><span class="line">INFO  Start processing</span><br><span class="line">INFO  Files loaded in 2.23 s</span><br><span class="line">INFO  Generated: index.html</span><br><span class="line">INFO  Generated: archives/index.html</span><br><span class="line">(此处略过。。。)</span><br><span class="line">INFO  Generated: js/src/schemes/pisces.js</span><br><span class="line">INFO  Generated: lib/font-awesome/fonts/fontawesome-webfont.eot</span><br><span class="line">INFO  Generated: lib/font-awesome/css/font-awesome.css</span><br><span class="line">INFO  53 files generated in 7 s</span><br></pre></td></tr></table></figure>
+<figure class="highlight livescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">zjhx@zjhx-PC MINGW32 /e/blog</span><br><span class="line">$ <span class="built_in">npm</span> install hexo-deployer-git --save</span><br><span class="line"><span class="built_in">npm</span> WARN deprecated swig@<span class="number">1.4</span>.<span class="number">2</span>: This package <span class="keyword">is</span> <span class="literal">no</span> longer maintained</span><br><span class="line"><span class="built_in">npm</span> WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@<span class="number">1.1</span>.<span class="number">3</span> (node_modules<span class="string">\fsevents):</span></span><br><span class="line"><span class="built_in">npm</span> WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform <span class="keyword">for</span> fsevents@<span class="number">1.1</span>.<span class="number">3</span>: wanted &#123;<span class="string">"os"</span>:<span class="string">"darwin"</span>,<span class="string">"arch"</span>:<span class="string">"any"</span>&#125; (current: &#123;<span class="string">"os"</span>:<span class="string">"win32"</span>,<span class="string">"arch"</span>:<span class="string">"ia32"</span>&#125;)</span><br><span class="line"></span><br><span class="line">+ hexo-deployer-git@<span class="number">0.3</span>.<span class="number">1</span></span><br><span class="line">added <span class="number">31</span> packages <span class="keyword">in</span> <span class="number">23.146s</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight crystal"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">zjhx@zjhx-PC MINGW32 /e/blog</span><br><span class="line">$ hexo g                                       /<span class="regexp">/生成public</span></span><br><span class="line"><span class="regexp">INFO  Start processing</span></span><br><span class="line"><span class="regexp">INFO  Files loaded in 2.23 s</span></span><br><span class="line"><span class="regexp">INFO  Generated: index.html</span></span><br><span class="line"><span class="regexp">INFO  Generated: archives/index</span>.html</span><br><span class="line">(此处略过。。。)</span><br><span class="line">INFO  <span class="symbol">Generated:</span> js/src/schemes/pisces.js</span><br><span class="line">INFO  <span class="symbol">Generated:</span> <span class="class"><span class="keyword">lib</span>/<span class="title">font</span>-<span class="title">awesome</span>/<span class="title">fonts</span>/<span class="title">fontawesome</span>-<span class="title">webfont</span>.<span class="title">eot</span></span></span><br><span class="line">INFO  <span class="symbol">Generated:</span> <span class="class"><span class="keyword">lib</span>/<span class="title">font</span>-<span class="title">awesome</span>/<span class="title">css</span>/<span class="title">font</span>-<span class="title">awesome</span>.<span class="title">css</span></span></span><br><span class="line">INFO  <span class="number">53</span> files generated in <span class="number">7</span> s</span><br></pre></td></tr></table></figure>
 <p><code>hexo d</code>发布到github仓库中去，需输入ssh密码：</p>
 <p><img src="http://p3thby42d.bkt.clouddn.com/ssh.png" alt="ssh.png"></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">zjhx@zjhx-PC MINGW32 /e/blog</span><br><span class="line">$ hexo d</span><br><span class="line">INFO  Deploying: git</span><br><span class="line">INFO  Clearing .deploy_git folder...</span><br><span class="line">INFO  Copying files from public folder...</span><br><span class="line">INFO  Copying files from extend dirs...</span><br><span class="line">（此处略过）</span><br><span class="line">remote: This repository moved. Please use the new location:</span><br><span class="line">remote:   git@github.com:cheneytac/cheneytac.github.io.git</span><br><span class="line">Branch &apos;master&apos; set up to track remote branch &apos;master&apos; from &apos;git@github.com:cheneytac/cheneytac.git&apos;.</span><br><span class="line">To github.com:cheneytac/cheneytac.git</span><br><span class="line"> + dfa99f6...3cb31f1 HEAD -&gt; master (forced update)</span><br><span class="line">INFO  Deploy done: git                                      //表示ok</span><br></pre></td></tr></table></figure>
+<figure class="highlight groovy"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">zjhx<span class="meta">@zjhx</span>-PC MINGW32 <span class="regexp">/e/</span>blog</span><br><span class="line">$ hexo d</span><br><span class="line">INFO  <span class="string">Deploying:</span> git</span><br><span class="line">INFO  Clearing .deploy_git folder...</span><br><span class="line">INFO  Copying files from <span class="keyword">public</span> folder...</span><br><span class="line">INFO  Copying files from extend dirs...</span><br><span class="line">（此处略过）</span><br><span class="line"><span class="string">remote:</span> This repository moved. Please use the <span class="keyword">new</span> <span class="string">location:</span></span><br><span class="line"><span class="string">remote:</span>   git<span class="meta">@github</span>.<span class="string">com:</span>cheneytac/cheneytac.github.io.git</span><br><span class="line">Branch <span class="string">'master'</span> set up to track remote branch <span class="string">'master'</span> from <span class="string">'git@github.com:cheneytac/cheneytac.git'</span>.</span><br><span class="line">To github.<span class="string">com:</span>cheneytac/cheneytac.git</span><br><span class="line"> + dfa99f6..<span class="number">.3</span>cb31f1 HEAD -&gt; master (forced update)</span><br><span class="line">INFO  Deploy <span class="string">done:</span> git                                      <span class="comment">//表示ok</span></span><br></pre></td></tr></table></figure>
 <h2 id="3、相关报错处理"><a href="#3、相关报错处理" class="headerlink" title="3、相关报错处理"></a>3、相关报错处理</h2><p>按照以上步骤step by setp来建立，正常不会报错，用hexo写博文正确姿态应是：建立md文件–&gt;书写修饰博文–&gt;查看本地预览–&gt;发布到github。在此过程中有可能会遇到以下问题：</p>
 <ul>
 <li>修改参数或博文后，本地<code>hexo s</code>即报错</li>
 <li>无法同步情况</li>
 </ul>
 <p>第1种情况需注意的是关键字后都有个空格，举个票子：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy: </span><br><span class="line"> type:git                                               //type关键字前缺tab键，冒号后缺空格</span><br><span class="line">  repository: git@github.com:cheneytac/cheneytac.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
+<figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">deploy</span>: </span><br><span class="line"> <span class="attribute">type</span>:git                                               <span class="comment">//type关键字前缺tab键，冒号后缺空格</span></span><br><span class="line">  <span class="attribute">repository</span>: git<span class="variable">@github</span>.<span class="attribute">com</span>:cheneytac/cheneytac.git</span><br><span class="line">  <span class="attribute">branch</span>: master</span><br></pre></td></tr></table></figure>
 <p>第2种情况请按照本文从头到尾再检查一边，另外可以先用<code>hexo clean</code>清掉public文件，再用<code>hexo g</code>来重新生成，最后再<code>hexo d</code>部署。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">zjhx@zjhx-PC MINGW32 /e/blog</span><br><span class="line">$  hexo clean</span><br><span class="line">INFO  Deleted database.</span><br><span class="line">INFO  Deleted public folder.</span><br></pre></td></tr></table></figure>
+<figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">zjhx@zjhx-PC MINGW32 /e/blog</span><br><span class="line">$  hexo clean</span><br><span class="line"><span class="builtin-name">INFO</span>  Deleted database.</span><br><span class="line"><span class="builtin-name">INFO</span>  Deleted public folder.</span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -456,7 +488,45 @@
     
 
     
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>坚持原创技术分享，您的支持将鼓励我继续创作！</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
 
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="http://p3thby42d.bkt.clouddn.com/erweima.png" alt="今晚的月亮好圆 微信支付"/>
+        <p>微信支付</p>
+      </div>
+    
+
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者：</strong>今晚的月亮好圆</li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="http://yoursite.com/2018/02/08/hexo搭建个人博客/" title="Hexo搭建个人博客（step by step）">http://yoursite.com/2018/02/08/hexo搭建个人博客/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明出处！</li>
+</ul>
+
+      </div>
     
 
     <footer class="post-footer">
@@ -535,10 +605,10 @@
       
         <ul class="sidebar-nav motion-element">
           <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            Table of Contents
+            文章目录
           </li>
           <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            Overview
+            站点概览
           </li>
         </ul>
       
@@ -547,8 +617,12 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
-              <p class="site-author-name" itemprop="name">cheneytac</p>
-              <p class="site-description motion-element" itemprop="description">记录那些折腾的日子……</p>
+              <img class="site-author-image" itemprop="image"
+                src="http://p3thby42d.bkt.clouddn.com/touxiang.jpg"
+                alt="今晚的月亮好圆" />
+            
+              <p class="site-author-name" itemprop="name">今晚的月亮好圆</p>
+              <p class="site-description motion-element" itemprop="description"></p>
           </div>
 
           
@@ -559,7 +633,7 @@
                   <a href="/archives/">
                 
                     <span class="site-state-item-count">2</span>
-                    <span class="site-state-item-name">posts</span>
+                    <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
               
@@ -574,7 +648,7 @@
                       
                     
                     <span class="site-state-item-count">1</span>
-                    <span class="site-state-item-name">categories</span>
+                    <span class="site-state-item-name">分类</span>
                   
                 </div>
               
@@ -589,13 +663,20 @@
                       
                     
                     <span class="site-state-item-count">1</span>
-                    <span class="site-state-item-name">tags</span>
+                    <span class="site-state-item-name">标签</span>
                   
                 </div>
               
             </nav>
           
 
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
           
 
           
@@ -624,7 +705,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1、前言"><span class="nav-number">1.</span> <span class="nav-text">1、前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2、单台win7上实现Hexo-Github静态网页托管"><span class="nav-number">2.</span> <span class="nav-text">2、单台win7上实现Hexo+Github静态网页托管</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1-准备环境"><span class="nav-number">2.1.</span> <span class="nav-text">2.1 准备环境</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#2-11-github上申请账号"><span class="nav-number">2.1.1.</span> <span class="nav-text">2.11 github上申请账号</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-12-下载Git、Node-js"><span class="nav-number">2.1.2.</span> <span class="nav-text">2.12 下载Git、Node.js</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-13-安装Git、Node-js"><span class="nav-number">2.1.3.</span> <span class="nav-text">2.13 安装Git、Node.js</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2-安装Hexo"><span class="nav-number">2.2.</span> <span class="nav-text">2.2 安装Hexo</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#2-2-1-Git账户设置"><span class="nav-number">2.2.1.</span> <span class="nav-text">2.2.1 Git账户设置</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-2-2-安装hexo"><span class="nav-number">2.2.2.</span> <span class="nav-text">2.2.2 安装hexo</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-3-本地web访问"><span class="nav-number">2.3.</span> <span class="nav-text">2.3 本地web访问</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-4-更换主题"><span class="nav-number">2.4.</span> <span class="nav-text">2.4 更换主题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-4-1-克隆下载主题"><span class="nav-number">2.5.</span> <span class="nav-text">2.4.1 克隆下载主题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-4-2-修改配置文件"><span class="nav-number">2.6.</span> <span class="nav-text">2.4.2 修改配置文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-4-3-本地预览新主题"><span class="nav-number">2.7.</span> <span class="nav-text">2.4.3 本地预览新主题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-5-发布到github"><span class="nav-number">2.8.</span> <span class="nav-text">2.5 发布到github</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-5-1-github建立仓库"><span class="nav-number">2.9.</span> <span class="nav-text">2.5.1 github建立仓库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-5-2-添加ssh访问权限"><span class="nav-number">2.10.</span> <span class="nav-text">2.5.2 添加ssh访问权限</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-5-3-建立ssh访问通道"><span class="nav-number">2.11.</span> <span class="nav-text">2.5.3 建立ssh访问通道</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-5-4-发布博文"><span class="nav-number">2.12.</span> <span class="nav-text">2.5.4 发布博文</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3、相关报错处理"><span class="nav-number">3.</span> <span class="nav-text">3、相关报错处理</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1、前言"><span class="nav-text">1、前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2、单台win7上实现Hexo-Github静态网页托管"><span class="nav-text">2、单台win7上实现Hexo+Github静态网页托管</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1-准备环境"><span class="nav-text">2.1 准备环境</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#2-11-github上申请账号"><span class="nav-text">2.11 github上申请账号</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-12-下载Git、Node-js"><span class="nav-text">2.12 下载Git、Node.js</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-13-安装Git、Node-js"><span class="nav-text">2.13 安装Git、Node.js</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2-安装Hexo"><span class="nav-text">2.2 安装Hexo</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#2-2-1-Git账户设置"><span class="nav-text">2.2.1 Git账户设置</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-2-2-安装hexo"><span class="nav-text">2.2.2 安装hexo</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-3-本地web访问"><span class="nav-text">2.3 本地web访问</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-4-更换主题"><span class="nav-text">2.4 更换主题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-4-1-克隆下载主题"><span class="nav-text">2.4.1 克隆下载主题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-4-2-修改配置文件"><span class="nav-text">2.4.2 修改配置文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-4-3-本地预览新主题"><span class="nav-text">2.4.3 本地预览新主题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-5-发布到github"><span class="nav-text">2.5 发布到github</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-5-1-github建立仓库"><span class="nav-text">2.5.1 github建立仓库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-5-2-添加ssh访问权限"><span class="nav-text">2.5.2 添加ssh访问权限</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-5-3-建立ssh访问通道"><span class="nav-text">2.5.3 建立ssh访问通道</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-5-4-发布博文"><span class="nav-text">2.5.4 发布博文</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3、相关报错处理"><span class="nav-text">3、相关报错处理</span></a></li></ol></div>
             
 
           </div>
@@ -644,11 +725,19 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+        <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">cheneytac</span>
+  <span class="author" itemprop="copyrightHolder">Cheney's Blog</span>
+
+  <div class="powered-by">
+  <i class="fa fa-user-md"></i><span id="busuanzi_container_site_uv">
+    本站访客数:<span id="busuanzi_value_site_uv"></span>
+  </span>
+  </div>
 
   
 
@@ -656,17 +745,13 @@
 </div>
 
 
-
-
-  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
-
-
-
-  <span class="post-meta-divider">|</span>
+  
 
 
 
-  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/theme-next/hexo-theme-next">NexT.Mist</a> v6.0.3</div>
+
+
+
 
 
 
