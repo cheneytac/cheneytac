@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Cheney&#39;s Blog</title>
+  <title>Cheneyta&#39;s Blog</title>
   
-  <subtitle>写小白看得懂的技术</subtitle>
+  
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://cheney.life/"/>
